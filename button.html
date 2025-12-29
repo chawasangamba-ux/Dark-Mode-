@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Dark Mode Toggle</title>
+
+    <!-- CSS -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 40px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        /* Dark mode styles */
+        .dark {
+            background-color: #222;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Dark Mode Example</h1>
+    <p>Click the button below to switch themes.</p>
+
+    <!-- HTML -->
+    <button id="toggle">Toggle Dark Mode</button>
+
+    <!-- JavaScript -->
+    <script>
+        document.getElementById("toggle").addEventListener("click", function () {
+            document.body.classList.toggle("dark");
+        });
+    </script>
+
+</body>
+
+</html>
